@@ -22,6 +22,7 @@ body {
 .navbar:hover {
   background: rgba(12, 12, 12, 0.6);
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.5);
+  margin: 2rem 12rem;
 }
 
 .navbar a {
@@ -34,37 +35,43 @@ body {
 
 .navbar a:hover {
   color: rgb(109, 67, 207);
-  scale: 105%;
+  scale: 125%;
   transform: translateY(-10px);
+  text-shadow: 0px 10px 20px rgba(109, 67, 207, 0.75);
 }
 
 .logo {
-  margin: 4rem 1rem;
-  padding: 2rem;
-  height: 50vh;
-  border: transparent 2px solid;
-  border-radius: 15%;
+  padding: 1.5rem;
+  height: 40vh;
+  max-width: 100%;
+  border-radius: 5%;
+  border: #3f3f3f 2px solid;
   background-color: #2f2f2f;
   transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
-  scale: 110%;
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  gap: 1rem;
+  flex-direction: column;
   margin-top: 2rem;
+  gap: 1.5rem;
 }
 
 h1 {
@@ -74,28 +81,33 @@ h1 {
 }
 
 .info-container {
-  margin: 0 8rem;
-  margin-top: 4rem;
-  padding: 2rem;
-  border-radius: 15%;
+  margin: 0 1rem;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border-radius: 5%;
   border: #3f3f3f 2px solid;
   background-color: #2f2f2f;
   transition: all 0.3s ease-in-out;
 }
 
 .info-container:hover {
-  scale: 110%;
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
 }
 
 .info-container p {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .info-container h1 {
   padding-bottom: .5rem;
   border-bottom: white 2px solid;
+}
+
+.info-container a {
+  color: rgb(109, 67, 207);
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
 }
