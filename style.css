@@ -11,18 +11,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 16rem;
+  margin: 0rem 16rem;
   border-radius: 12px;
   padding: 1rem 0;
   background: rgba(12, 12, 12, 0.50);
   font-size: xx-large;
   transition: all 0.3s ease-in-out;
+  min-width: fit;
 }
 
 .navbar:hover {
-  background: rgba(12, 12, 12, 0.6);
+  background: rgba(12, 12, 12, 0.75);
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.5);
-  margin: 2rem 12rem;
+  margin: 0rem 12rem;
 }
 
 .navbar a {
@@ -106,8 +107,75 @@ h1 {
   border-bottom: white 2px solid;
 }
 
+#current-page {
+  color: rgb(109, 67, 207);
+}
+
 .info-container a {
   color: rgb(109, 67, 207);
   font-size: 2rem;
   transition: all 0.3s ease-in-out;
+}
+
+.activities-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  padding: 1rem 2.5%;
+  background-color: #2f2f2f;
+  transition: all 0.3s ease-in-out;
+  border-radius: 22.5px;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.activities:hover {
+  box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
+  border-color: rgb(109, 67, 207);
+}
+
+.activities-text {
+  width: 70%;
+  flex-grow: 1;
+}
+
+.activities img {
+  width: 25%;
+  object-fit: cover;
+}
+
+.activities h1 {
+  padding-bottom: .5rem;
+  text-decoration: underline solid;
+  text-underline-offset: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.activities:hover h1 {
+  text-decoration: underline rgb(109, 67, 207);
+}
+
+
+.activities p {
+  text-align: center;
+}
+
+
+.activities-past {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.activities-future {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
