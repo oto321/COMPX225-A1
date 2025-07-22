@@ -15,40 +15,52 @@
     <a id="current-page" href="./register.html">Register</a>
   </nav>
   <form class="register-contiainer" method="GET" action="index.html" onsubmit="showAlert()">
-    <!-- first name input -->
-    <div class=" inline">
-      <p>First Name:</p>
-      <input type="text" placeholder="Enter First Name" name="firstName" required>
+
+    <!-- name input div -->
+    <div class="inline">
+      <!-- first name input -->
+      <div class="block">
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" name="fName" placeholder="Enter First Name" name="firstName" required>
+      </div>
+
+      <!-- last name input -->
+      <div class="block">
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" name="lName" placeholder="Enter Last Name" name="lastName" required>
+      </div>
     </div>
 
-    <!-- last name input -->
-    <div class="inline">
-      <p>Last Name:</p>
-      <input type="text" placeholder="Enter Last Name" name="lastName" required>
-    </div>
+
+
 
     <!-- student id input -->
-    <div class="inline">
-      <p>Student Id:</p>
-      <input type="text" placeholder="Enter Id" name="studentId" required>
+    <div class="block">
+      <label for="studentId">Student Id:</label>
+      <input type="text" id="studentId" name="studentId" placeholder="Enter Id" name="studentId" required>
     </div>
 
-    <!-- email input -->
+    <!-- contact options (either phone or email) -->
     <div class="inline">
-      <p>Email:</p>
-      <input type="email" placeholder="Enter Email" name="email" required>
+      <!-- email input -->
+      <div class="block">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" name="email" required>
+      </div>
+
+      <!-- phone input -->
+      <div class="block">
+        <label for="phoneNumber">Mobile Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" name="mobileNumber">
+      </div>
+
     </div>
 
-    <!-- phone input -->
-    <div class="inline">
-      <p>Mobile Number:</p>
-      <input type="tel" placeholder="Enter Phone Number" name="mobileNumber">
-    </div>
 
     <!-- reference input -->
-    <div class="inline">
-      <p>Where did you hear about us:</p>
-      <input type="text" placeholder="Where did you hear about us from" name="source">
+    <div class="block">
+      <label for="reference">Where did you hear about us:</label>
+      <input type="text" id="reference" name="reference" placeholder="Where did you hear about us from" name="source">
     </div>
 
     <button class="form-submit" type="submit">Submit</button>

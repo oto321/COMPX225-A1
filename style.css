@@ -183,10 +183,10 @@ h1 {
 .register-contiainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin: 2rem 25vw;
+  gap: 3rem;
+  margin: 2rem 20vw;
   background-color: #2f2f2f;
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 45px;
   justify-content: center;
   align-items: center;
@@ -200,61 +200,104 @@ h1 {
 
 
 .register-contiainer input {
-  background-color: transparent;
-  border: transparent;
-  border-bottom: solid white;
+  background-color: #39404066;
+  border-color: transparent;
+  border-bottom: 2px solid white;
   font-size: 1.5rem;
   color: white;
-  width: 50%;
   transition: all .2s ease-in-out;
   border-radius: 11.25px;
+  padding: .5rem;
 }
 
 .register-contiainer input:hover {
   scale: 105%;
+  color: rgb(194, 184, 224);
+  background-color: #394040bb;
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.5);
-  border-color: rgb(69, 33, 157);
+  border-bottom-color: rgb(69, 33, 157);
 }
-
 
 .register-contiainer input:focus {
+  background-color: #394040ff;
   outline: none;
+  box-shadow: 0 5px 15px rgb(69, 33, 157);
   border-color: rgb(109, 67, 207);
+  color: rgb(171, 153, 224);
+  text-shadow: 0px 5px 50px rgba(109, 67, 207, 0.75);
 }
+
+
+.register-contiainer label {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  align-items: center;
+  width: fit-content;
+}
+
+
 
 .inline {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
   font-size: large;
-  justify-content: end;
+  justify-content: space-around;
   width: 100%;
   margin: 0.25rem 0;
 }
 
-.inline p {
-  font-size: 1.4rem;
-  font-weight: bolder;
+.inline input {
+  width: 50%;
 }
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: large;
+  justify-content: center;
+  width: 100%;
+  margin: 0.25rem 0;
+}
+
+.block input {
+  width: 100%;
+}
+
+.block label {
+  transition: all .2s ease-in-out;
+}
+
+
+.block:hover label {
+  color: rgba(123, 87, 227, 0.8);
+  text-underline-offset: 0.3rem;
+  scale: 105%;
+}
+
 
 .form-submit {
   align-content: center;
+  text-align: center;
   width: 25%;
-  font-size: large;
+  height: initial;
+  font-size: x-large;
   font-weight: bolder;
   background-color: rgba(123, 87, 227, 0.8);
   border: transparent;
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
   padding: 2rem 4rem;
-  transition: all .1s ease-in-out;
+  transition: all .2s ease-in-out;
   box-shadow: 0 5px 15px rgba(74, 71, 81, 1);
   color: black;
 }
 
 .form-submit:hover {
-  scale: 105%;
+  width: 30%;
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.75);
   background-color: rgba(129, 117, 247, 1);
   color: white;
+  font-size: xx-large;
 }
