@@ -12,11 +12,54 @@
   <nav class="navbar">
     <a href="./index.html">HomePage</a>
     <a href="./activities.html">Activities</a>
-    <a style="color: rgb(109, 67, 207);" href="./register.html">Resister</a>
+    <a id="current-page" href="./register.html">Register</a>
   </nav>
-  <main class="main-content">
+  <form class="register-contiainer" method="GET" action="index.html" onsubmit="showAlert()">
+    <!-- first name input -->
+    <div class=" inline">
+      <p>First Name:</p>
+      <input type="text" placeholder="Enter First Name" name="firstName" required>
+    </div>
 
-  </main>
+    <!-- last name input -->
+    <div class="inline">
+      <p>Last Name:</p>
+      <input type="text" placeholder="Enter Last Name" name="lastName" required>
+    </div>
+
+    <!-- student id input -->
+    <div class="inline">
+      <p>Student Id:</p>
+      <input type="text" placeholder="Enter Id" name="studentId" required>
+    </div>
+
+    <!-- email input -->
+    <div class="inline">
+      <p>Email:</p>
+      <input type="email" placeholder="Enter Email" name="email" required>
+    </div>
+
+    <!-- phone input -->
+    <div class="inline">
+      <p>Mobile Number:</p>
+      <input type="tel" placeholder="Enter Phone Number" name="mobileNumber">
+    </div>
+
+    <!-- reference input -->
+    <div class="inline">
+      <p>Where did you hear about us:</p>
+      <input type="text" placeholder="Where did you hear about us from" name="source">
+    </div>
+
+    <button class="form-submit" type="submit">Submit</button>
+  </form>
+
+
+  <script>
+    function showAlert() {
+      alert("Thanks, we will be in touch soon"); // 
+    }
+  </script>
 </body>
 
 </html>

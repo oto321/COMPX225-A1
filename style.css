@@ -179,3 +179,68 @@ h1 {
   flex-direction: column;
   gap: 2rem;
 }
+
+.register-contiainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 25vw;
+  background-color: #2f2f2f;
+  padding: 2rem;
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.register-contiainer input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: solid white;
+  font-size: 1.5rem;
+  color: white;
+  width: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.register-contiainer input:hover {
+  scale: 105%;
+  border-color: rgb(69, 33, 157);
+}
+
+
+.register-contiainer input:focus {
+  outline: none;
+  border-color: rgb(109, 67, 207);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: large;
+  justify-content: end;
+  width: 100%;
+}
+
+.form-submit {
+  align-content: center;
+  width: 25%;
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgba(123, 87, 227, 0.8);
+  border: transparent;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  padding: 2rem 4rem;
+  transition: all .1s ease-in-out;
+  box-shadow: 0 5px 15px rgba(74, 71, 81, 1);
+  color: black;
+}
+
+.form-submit:hover {
+  scale: 105%;
+  box-shadow: 0 5px 15px rgba(109, 67, 207, 0.75);
+  background-color: rgba(129, 117, 247, 1);
+  color: white;
+}
