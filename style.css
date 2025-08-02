@@ -1,3 +1,6 @@
+/* styling for the body  
+using a dark gradient with a purple hue
+ */
 body {
   background-image: linear-gradient(to top, #0f0f0f, #1a1a1a, #242026, #2e2932, #383342);
   min-height: 100vh;
@@ -6,7 +9,15 @@ body {
   position: relative;
 }
 
+/* styling for the header */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+}
 
+
+/* Styling for the navbar to create a floating bar effect that expands on hover */
 .navbar {
   display: flex;
   justify-content: center;
@@ -20,12 +31,14 @@ body {
   min-width: fit;
 }
 
+/* navbar hover effect to add background opacity, shadow and margin change */
 .navbar:hover {
   background: rgba(12, 12, 12, 0.75);
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.5);
   margin: 0rem 12rem;
 }
 
+/* styling for navbar links */
 .navbar a {
   color: #ffffff;
   text-decoration: none;
@@ -34,6 +47,7 @@ body {
   transition: all 0.2s ease-in;
 }
 
+/* navbar links hover style: purple color, scale, upward move and glow */
 .navbar a:hover {
   color: rgb(109, 67, 207);
   scale: 125%;
@@ -41,6 +55,12 @@ body {
   text-shadow: 0px 10px 20px rgba(109, 67, 207, 0.75);
 }
 
+/* id selector to style the curent page  */
+#current-page {
+  color: rgb(109, 67, 207);
+}
+
+/* styling for the logo, adding padding, size, border and background */
 .logo {
   padding: 1.5rem;
   height: 40vh;
@@ -51,11 +71,16 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* logo hover adds box shadow and changes border color */
 .logo:hover {
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
+
 }
 
+
+/* main content wrapper using a two column grid 
+to organize the description and logo */
 .main-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -65,6 +90,8 @@ body {
   padding: 0 2rem;
 }
 
+
+/* wrapper for the logos */
 .logo-container {
   display: flex;
   justify-content: center;
@@ -75,12 +102,9 @@ body {
   gap: 1.5rem;
 }
 
-h1 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 2.5rem;
-}
 
+/* warpper for the description 
+with basic hover animations  */
 .info-container {
   margin: 0 1rem;
   margin-top: 2rem;
@@ -91,39 +115,45 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
+/* hover effect for description container adds shadow and border color */
 .info-container:hover {
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
 }
 
+/* styling for the Headings in the descitption */
+.info-container h1 {
+  padding-bottom: .5rem;
+  border-bottom: white 2px solid;
+}
+
+/* styling for the paraghraphs in the descitption */
 .info-container p {
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.info-container h1 {
-  padding-bottom: .5rem;
-  border-bottom: white 2px solid;
-}
-
-#current-page {
-  color: rgb(109, 67, 207);
-}
-
+/* styling to make the join now button in the descitption stand out more */
 .info-container a {
   color: rgb(109, 67, 207);
   font-size: 2rem;
   transition: all 0.3s ease-in-out;
 }
 
-.activities-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+/* add a margin to the activites table */
+.activities-wrapper {
   margin: 2rem;
 }
 
+/* stylign to make the header for past and future activites stand out more */
+.activities-header {
+  font-size: xxx-large;
+  padding-bottom: 2rem;
+
+}
+
+/* activities container with horizontal flex layout and styling */
 .activities {
   display: flex;
   flex-direction: row;
@@ -136,50 +166,57 @@ h1 {
   height: fit-content;
 }
 
+/* hover effect for activities container adds shadow and border color */
 .activities:hover {
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
 }
 
+/* styling for activities text section */
 .activities-text {
   width: 70%;
   flex-grow: 1;
 }
 
+/* styling for images inside activities container */
 .activities img {
   width: 25%;
   object-fit: cover;
 }
 
-.activities h1 {
+/* styling for activity headings with underline and transition */
+.activities h2 {
   padding-bottom: .5rem;
   text-decoration: underline solid;
   text-underline-offset: 15px;
   transition: all 0.3s ease-in-out;
 }
 
-.activities:hover h1 {
+/* hover effect for activity headings changes underline color */
+.activities:hover h2 {
   text-decoration: underline rgb(109, 67, 207);
 }
 
-
+/* center text alignment for activity paragraphs */
 .activities p {
   text-align: center;
 }
 
-
+/* past activities container uses vertical flex layout */
 .activities-past {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* future activities container uses vertical flex layout */
 .activities-future {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* register container styled with flex layout, padding, and rounded corners */
 .register-contiainer {
   display: flex;
   flex-direction: column;
@@ -193,12 +230,13 @@ h1 {
   transition: all .3s ease-in-out;
 }
 
+/* hover effect for register container adds shadow and border color */
 .register-contiainer:hover {
   box-shadow: 0 15px 15px rgba(109, 67, 207, 0.5);
   border-color: rgb(109, 67, 207);
 }
 
-
+/* styling for input fields inside register container */
 .register-contiainer input {
   background-color: #39404066;
   border-color: transparent;
@@ -210,6 +248,8 @@ h1 {
   padding: .5rem;
 }
 
+
+/* input hover effect scales and changes color and background */
 .register-contiainer input:hover {
   scale: 105%;
   color: rgb(194, 184, 224);
@@ -218,6 +258,7 @@ h1 {
   border-bottom-color: rgb(69, 33, 157);
 }
 
+/* input focus styles with background, border and text glow */
 .register-contiainer input:focus {
   background-color: #394040ff;
   outline: none;
@@ -227,7 +268,7 @@ h1 {
   text-shadow: 0px 5px 50px rgba(109, 67, 207, 0.75);
 }
 
-
+/* styling for labels inside register container */
 .register-contiainer label {
   font-size: 1.4rem;
   font-weight: bolder;
@@ -236,7 +277,7 @@ h1 {
 }
 
 
-
+/* inline form groups use horizontal flex with gap and spacing */
 .inline {
   display: flex;
   flex-direction: row;
@@ -247,10 +288,12 @@ h1 {
   margin: 0.25rem 0;
 }
 
+/* inputs inside inline groups take half the width */
 .inline input {
   width: 50%;
 }
 
+/* block form groups use vertical flex layout */
 .block {
   display: flex;
   flex-direction: column;
@@ -261,22 +304,24 @@ h1 {
   margin: 0.25rem 0;
 }
 
+/* inputs inside block groups take full width */
 .block input {
   width: 100%;
 }
 
+/* labels in block groups have transition for hover effect */
 .block label {
   transition: all .2s ease-in-out;
 }
 
-
+/* block label hover changes color and scale */
 .block:hover label {
   color: rgba(123, 87, 227, 0.8);
   text-underline-offset: 0.3rem;
   scale: 105%;
 }
 
-
+/* styling for submit button with purple background and rounded corners */
 .form-submit {
   align-content: center;
   text-align: center;
@@ -294,6 +339,7 @@ h1 {
   color: black;
 }
 
+/* submit button hover effect increases width, brightens color, and adds glow */
 .form-submit:hover {
   width: 30%;
   box-shadow: 0 5px 15px rgba(109, 67, 207, 0.75);
